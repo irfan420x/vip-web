@@ -1,0 +1,24 @@
+{
+  "name": "vip-web",
+  "version": "1.0.0",
+  "description": "Advanced Personal Portfolio Website",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/src/pages/index.html",
+    "build-css": "postcss src/css/style.css -o public/assets/css/main.css",
+    "watch-css": "postcss src/css/style.css -o public/assets/css/main.css --watch",
+    "optimize-images": "imagemin src/assets/images/* --out-dir=public/assets/images"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "imagemin-cli": "^7.0.0",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "gsap": "^3.12.2"
+  }
+}
